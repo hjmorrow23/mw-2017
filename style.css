@@ -291,6 +291,82 @@ body {
 	max-width: 26.5rem;
 }
 
+.testimonial {
+	height: 39.125rem;
+	text-align: center;
+}
+
+.testimonial-quote {
+	display: inline-block;
+	font-weight: 300;
+	max-width: 56.4375rem;
+	color: #E66244;
+	margin-top: 10.625rem;
+	margin-bottom: 0;
+	font-size: 3rem;
+}
+
+.testimonial-person {
+	margin-top: 4.4375rem;
+	color: #AAAAAA;
+	font-size: 1.375rem;
+	font-weight: 500;
+}
+
+.testimonial-info, 
+.testimonial-course {
+	font-size: 1rem;
+	font-weight: 500;
+	color: #AAAAAA;
+	margin-bottom: 6.9375;
+}
+
+.footer-background {
+/* 	height: 42rem; */
+	background: url("img/footer.jpg");
+	color: #FFFFFF;
+}
+
+.main-footer {
+	height: 34.125rem;
+	display: block;
+}
+
+.course-info {
+	display: inline-block;
+	list-style: none;
+	margin-top: 0;
+/* 	margin-bottom: 9.55rem; */
+	padding-top: 8.8125rem;
+	padding-left: 5.75rem;
+	font-size: 2.25rem;
+	font-weight: 300;
+}
+
+.sign-up-button {
+	margin-top: 10.8125rem;
+	border: 3px solid white;
+	margin-right: 7.75rem;
+	font-size: 1.86875rem;
+	text-decoration: none;
+	color: #FFFFFF;
+	float: right;
+	display: inline-block;
+	padding: 1.5rem 7.5rem;
+	text-align: center;
+	font-weight: 600;
+}
+
+.sub-footer {
+	height: 7.875rem;
+	width: 100%;
+	display: inline-block;
+	background: rgba(0, 0, 0, .2);
+	position: relative;
+	bottom: 0;
+}
+
+
 
 @media (max-width: 768px) {
 	.goals-list-item {
