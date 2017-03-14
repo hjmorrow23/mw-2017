@@ -1,3 +1,23 @@
+/* Colors */
+$white: #FFFFFF;
+$lightestgrey: #AAAAAA;
+$lightgrey: #f9f9f9;
+$grey: #C3BFBF;
+$darkgrey: #777777;
+$redish: #E66244;
+
+/* Fonts */
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+/* Extends */
+%centered {
+	text-align: center;
+}
+
 *, *::before, *::after {
 	box-sizing: border-box;
 }
@@ -9,10 +29,11 @@ body {
 }
 
 .background-wrapper{
-	background-image: url("img/hero.jpg");
+	background-image: url("../../img/hero.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	color: white;
+	background-attachment: fixed;
+	color: $white;
 	height: 40rem;
 }
 
@@ -52,13 +73,13 @@ body {
 
 .nav-item-link {
 	text-decoration: none;
-	color: white;
+	color: $white;
 	font-size: 1.125rem;
-	font-weight: 500;
+	font-weight: $medium;
 }
 
 .main-hero {
-	text-align: center;
+	@extend %centered;
 	height: 20rem;
 }
 
@@ -71,12 +92,12 @@ body {
 
 .main-hero-heading {
 	font-size: 5.75rem;
-	font-weight: 100;
+	font-weight: $thin;
 }
 
 .main-hero-date {
 	font-size: 1.5rem;
-	font-weight: 300;
+	font-weight: $light;
 	
 }
 
@@ -86,24 +107,24 @@ body {
 }
 
 .intro {
-	text-align: center;
+	@extend %centered;
 }
 
 .intro-text {
-	color: #C3BFBF;
+	color: $grey;
 	margin-top: 9.375rem;
 	margin-bottom: 4.8125rem;
 	font-size: 2rem;
-	text-align: center;
+	@extend %centered;
 	max-width: 52.75rem;
 	display: inline-block;
-	font-weight: 300;
+	font-weight: $light;
 }
 
 .divider {
 	width:100%;
 	height: 3rem;
-	background-image: url("img/divider.png");
+	background-image: url("../../img/divider.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	margin-bottom: 7.9375rem;
@@ -116,12 +137,12 @@ body {
 }
 
 .goals-header {
-	color: #777777;
+	color: $darkgrey;
 	font-size: 1.75rem;
 	text-transform: uppercase;
 	text-align: center;
 	margin-bottom: 4.3125rem;
-	font-weight: 500;
+	font-weight: $medium;
 }
 
 .goals-list {
@@ -140,7 +161,7 @@ body {
 /* 	margin-right: 3.3125rem; */
 	padding-right: 3.3125rem;
 	vertical-align: top;
-	font-weight: 400;
+	font-weight: $bold;
 }
 
 .goals-list-item:nth-child(3n+1) {
@@ -168,24 +189,24 @@ body {
 }
 
 .goals-text {
-	color: #777777;
+	color: $darkgrey;
 }
 
 .colearners {
 	padding-top: 5.6875rem; 
 	width: 100%;
-	background: #f9f9f9;
+	background: $lightgrey;
 /* 	display: block; */
 }
 
 .colearners-heading {
-	font-weight: 500;
-	text-align: center;
+	font-weight: $medium;
+	@extend %centered;
 	}
 
 .colearners-list {	
 	margin-top: 5.625rem;
-	text-align: center;
+	@extend %centered;
 	list-style: none;
 	margin-left: 5.25rem;
 	margin-right: 5.25rem;
@@ -227,7 +248,7 @@ body {
 	overflow: hidden;
 	height: 1.35rem;
 	width: 1.35rem;
-	background-image: url("img/slice.png");
+	background-image: url("../../img/slice.png");
 	background-repeat: no-repeat;
 /* 	border: 1px solid red; */
 }
@@ -251,8 +272,8 @@ body {
 }
 
 .instructor {
-	background-image: url("img/instructor.jpg");
-	color: #FFFFFF;
+	background-image: url("../../img/instructor.jpg");
+	color: $white;
 	height: 43.8125rem;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -270,26 +291,26 @@ body {
 
 .instructor-heading {
 	font-size: 1.125rem;
-	font-weight: 300;
+	font-weight: $light;
 	margin-bottom: .9375rem;
 }
 
 .instructor-name {
 	font-size: 2.25rem;
-	font-weight: 500;
+	font-weight: $medium;
 	margin-bottom: 0;
 	margin-top: 0;
 }
 
 .instructor-company {
 	font-size: 1.375;
-	font-weight: 500;
+	font-weight: $medium;
 	margin-top: .25rem;
 }
 
 .instructor-description {
 	font-size: 1.25rem;
-	font-weight: 400;
+	font-weight: $regular;
 	max-width: 26.5rem;
 }
 
@@ -300,9 +321,9 @@ body {
 
 .testimonial-quote {
 	display: inline-block;
-	font-weight: 300;
+	font-weight: $light;
 	max-width: 56.4375rem;
-	color: #E66244;
+	color: $redish;
 	margin-top: 10.625rem;
 	margin-bottom: 0;
 	font-size: 3rem;
@@ -310,25 +331,26 @@ body {
 
 .testimonial-person {
 	margin-top: 4.4375rem;
-	color: #AAAAAA;
+	color: $lightestgrey;
 	font-size: 1.375rem;
-	font-weight: 500;
+	font-weight: $medium;
 }
 
 .testimonial-info, 
 .testimonial-course {
 	font-size: 1rem;
-	font-weight: 500;
-	color: #AAAAAA;
+	font-weight: $medium;
+	color: $lightestgrey;
 	margin-bottom: 6.9375;
 }
 
 .footer-background {
 /* 	height: 42rem; */
-	background: url("img/footer.jpg");
+	background: url("../../img/footer.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	color: #FFFFFF;
+	background-attachment: fixed;
+	color: $white;
 }
 
 .main-footer {
@@ -344,7 +366,7 @@ body {
 	padding-top: 8.8125rem;
 	padding-left: 5.75rem;
 	font-size: 2.25rem;
-	font-weight: 300;
+	font-weight: $light;
 }
 
 .course-info li:nth-child(5) {
@@ -353,16 +375,16 @@ body {
 
 .sign-up-button {
 	margin-top: 12.8125rem;
-	border: 3px solid white;
+	border: 3px solid $white;
 	margin-right: 7.75rem;
 	font-size: 1.86875rem;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: $white;
 	float: right;
 	display: inline-block;
 	padding: 1.5rem 7.5rem;
-	text-align: center;
-	font-weight: 600;
+	@extend %centered;
+	font-weight: $bold;
 }
 
 .sub-footer {
@@ -388,23 +410,111 @@ body {
 	
 }
 
-.address {
-	
-}
-
 @media (max-width: 768px) {
+	.logo,
+	.main-nav {
+		display: block;
+	}
+	
+	.logo {
+		margin: 0 auto;
+		padding-top: 2rem;
+		text-align: center;
+	}
+	
+	.main-nav {
+		padding: 2rem 0 0 0;
+		margin: 0;
+		float: none;
+		text-align: center;
+		
+		.nav-list {
+			padding: 0;
+			
+			.nav-item {
+				padding: 0 .5rem;
+			}
+		}
+	}
+	
+	.main-hero-heading,
+	.main-hero-date {
+		top: 30%;
+	}
+	
+	.background-wrapper {
+		height: 45rem;
+	}
+	
+	.intro-text {
+		max-width: 90%;
+	}
+	
+	.goals-list {
+		padding-left: 0;
+	}
+	
 	.goals-list-item {
 		width: 100%;
+		padding-right: 0;
 	}
 	
 	.goals-heading {
 		text-align: center;
 	}
+	
+	.goals-text {
+		width: 100%;
+		text-align: center;
+		
+	}
+	
+	.colearners-item {
+		margin-right: 0;
+	}
+	
+	.instructor {
+		padding-left: 0;
+		background-size: cover;
+	}
+	
+	.instructor-heading,
+	.instructor-name,
+	.instructor-company,
+	.instructor-description {
+		text-align: center;
+	}
+	
+	.testimonial {
+		height: 42rem;
+	}
+	
+	.testimonial-quote {
+		font-size: 2rem;
+		max-width: 90%;
+	}
+	
+	.background-wrapper,
+	.footer-background {
+		background-attachment: none;
+	}
+	
+	.main-footer {
+		height: 25rem;
+	}
+	
+	.course-info {
+		font-size: 1.5rem;
+		display: block;
+		margin-bottom: 4rem;
+	}
+	
+	.sign-up-button {
+		float: none;
+		font-size: 1rem;
+		padding: 1rem 0;
+		display: block;
+		margin: 0 auto 4rem;
+		width: 50%;
+	}
 }
-
-
-
-
-
-
-
