@@ -1,0 +1,37 @@
+/* Extends
+========================
+*/
+
+%centered {
+	text-align: center;
+}
+
+/* Mixins 
+========================
+*/
+
+
+// Clearing Floats >> Apply to container element
+@mixin clearfix() {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+//Media Queries
+// Anything device width that is equal to or wider than $min value
+@mixin min-up($min) {
+	@media only screen and (min-width: $min) { @content; }
+}
+
+// Anything device width that is equal to or skinnier than $max value
+@mixin max-down($max) {
+	@media only screen and (max-width: $max) { @content; }
+}
+
+// Anything device width between these two values
+@mixin min-max($min, $max) {
+	@media only screen and (min-width: $min) and (max-width: $max) { @content; }
+}

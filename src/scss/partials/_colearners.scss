@@ -1,0 +1,61 @@
+.colearners {
+	padding-top: 5.6875rem; 
+	width: 100%;
+	background: $lightgrey;
+}
+
+.colearners-heading {
+	font-weight: $medium;
+	@extend %centered;
+	}
+
+.colearners-list {	
+	margin-top: 5.625rem;
+	@extend %centered;
+	list-style: none;
+	margin-left: 5.25rem;
+	margin-right: 5.25rem;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.colearners-item {
+	display: inline-block;
+	margin-right: 2.625rem;
+	
+	@include max-down(768px) { 
+		margin-right: 0;
+	}
+}
+
+.colearners-item:nth-child(4),
+.colearners-item:nth-child(8),
+.colearners-item:nth-child(12) {
+	margin-right: 0;
+}
+
+.colearners-photo {
+	border-radius: 50%;
+}
+
+.social-list {
+	list-style: none;
+	text-align: center;
+	padding-bottom: 4.375rem;
+	padding-left: 0;
+}
+
+.social-list-item {
+	display: inline-block;
+}
+
+.social-list-link {
+	display: inline-block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	height: 1.35rem;
+	width: 1.35rem;
+	background-image: url("../../img/slice.png");
+	background-repeat: no-repeat;
+}

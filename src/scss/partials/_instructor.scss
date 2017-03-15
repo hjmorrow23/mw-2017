@@ -1,0 +1,50 @@
+.instructor {
+	background-image: url("../../img/instructor.jpg");
+	color: $white;
+	height: 43.8125rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-left: 5rem;
+	padding-top: .01rem;
+	
+	@include max-down(768px) {
+		padding-left: 0;
+	}
+}
+
+.instructor-heading,
+.instructor-name,
+.instructor-company,
+.instructor-description {
+	position: relative;
+	top: 13rem;
+	
+	@include max-down(768px) { 
+		text-align: center;
+	}
+}
+
+.instructor-heading {
+	font-size: 1.125rem;
+	font-weight: $light;
+	margin-bottom: .9375rem;
+}
+
+.instructor-name {
+	font-size: 2.25rem;
+	font-weight: $medium;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.instructor-company {
+	font-size: 1.375;
+	font-weight: $medium;
+	margin-top: .25rem;
+}
+
+.instructor-description {
+	font-size: 1.25rem;
+	font-weight: $regular;
+	max-width: 26.5rem;
+}

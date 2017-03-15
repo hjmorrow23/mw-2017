@@ -1,15 +1,19 @@
 /* Colors */
 /* Fonts */
-/* Extends */
+/* Extends
+========================
+*/
 .main-hero, .intro, .intro-text, .colearners-heading, .colearners-list, .sign-up-button {
   text-align: center; }
 
+/* Mixins 
+========================
+*/
 *, *::before, *::after {
   box-sizing: border-box; }
 
 body {
   margin: 0 auto;
-  /* 	width: 74.375rem; */
   font-family: 'Roboto', sans-serif; }
 
 .background-wrapper {
@@ -19,26 +23,53 @@ body {
   background-attachment: fixed;
   color: #FFFFFF;
   height: 40rem; }
+  @media only screen and (max-width: 768px) {
+    .background-wrapper {
+      height: 45rem;
+      background-attachment: none; } }
 
 .logo,
 .main-nav,
 .nav-item {
   display: inline-block; }
 
+@media only screen and (max-width: 768px) {
+  .logo,
+  .main-nav {
+    display: block; } }
+
 .logo {
   width: 9.8125rem;
   height: 6.25rem;
   margin-top: 1.125rem;
   margin-left: 2.125rem; }
+  @media only screen and (max-width: 768px) {
+    .logo {
+      margin: 0 auto;
+      padding-top: 2rem;
+      text-align: center; } }
 
 .main-nav {
   margin-top: 2.1875rem;
   margin-right: 2.1875rem;
   float: right; }
+  @media only screen and (max-width: 768px) {
+    .main-nav {
+      padding: 2rem 0 0 0;
+      margin: 0;
+      float: none;
+      text-align: center; } }
+
+@media only screen and (max-width: 768px) {
+  .nav-list {
+    padding: 0; } }
 
 .nav-item {
   list-style: none;
   padding-left: 1.75rem; }
+  @media only screen and (max-width: 768px) {
+    .nav-item {
+      padding: 0 0.5rem; } }
 
 .nav-item-link {
   text-decoration: none;
@@ -54,6 +85,10 @@ body {
   margin: 0;
   position: relative;
   top: 45%; }
+  @media only screen and (max-width: 768px) {
+    .main-hero-heading,
+    .main-hero-date {
+      top: 30%; } }
 
 .main-hero-heading {
   font-size: 5.75rem;
@@ -75,6 +110,9 @@ body {
   max-width: 52.75rem;
   display: inline-block;
   font-weight: 300; }
+  @media only screen and (max-width: 768px) {
+    .intro-text {
+      max-width: 90%; } }
 
 .divider {
   width: 100%;
@@ -100,19 +138,23 @@ body {
 .goals-list {
   margin-left: 3.4375rem;
   margin-right: 3.4375rem;
-  /* 	margin-bottom: 9.6875rem; */
   display: block; }
+  @media only screen and (max-width: 768px) {
+    .goals-list {
+      padding-left: 0; } }
 
 .goals-list-item {
   list-style: none;
   display: inline-block;
   float: left;
   width: 33%;
-  /* 	width: 20rem; */
-  /* 	margin-right: 3.3125rem; */
   padding-right: 3.3125rem;
   vertical-align: top;
   font-weight: 700; }
+  @media only screen and (max-width: 768px) {
+    .goals-list-item {
+      width: 100%;
+      padding-right: 0; } }
 
 .goals-list-item:nth-child(3n+1) {
   clear: left; }
@@ -131,15 +173,21 @@ body {
 
 .goals-heading {
   font-size: 1rem; }
+  @media only screen and (max-width: 768px) {
+    .goals-heading {
+      text-align: center; } }
 
 .goals-text {
   color: #777777; }
+  @media only screen and (max-width: 768px) {
+    .goals-text {
+      width: 100%;
+      text-align: center; } }
 
 .colearners {
   padding-top: 5.6875rem;
   width: 100%;
-  background: #f9f9f9;
-  /* 	display: block; */ }
+  background: #f9f9f9; }
 
 .colearners-heading {
   font-weight: 500; }
@@ -154,8 +202,10 @@ body {
 
 .colearners-item {
   display: inline-block;
-  /* 	width: 14.5rem; */
   margin-right: 2.625rem; }
+  @media only screen and (max-width: 768px) {
+    .colearners-item {
+      margin-right: 0; } }
 
 .colearners-item:nth-child(4),
 .colearners-item:nth-child(8),
@@ -182,17 +232,7 @@ body {
   height: 1.35rem;
   width: 1.35rem;
   background-image: url("../../img/slice.png");
-  background-repeat: no-repeat;
-  /* 	border: 1px solid red; */ }
-
-.facebook {
-  background-position: -33px 0; }
-
-.dribble {
-  background-position: -70px 0; }
-
-.linkedin {
-  background-position: -104px 0; }
+  background-repeat: no-repeat; }
 
 .instructor {
   background-image: url("../../img/instructor.jpg");
@@ -202,6 +242,9 @@ body {
   background-repeat: no-repeat;
   padding-left: 5rem;
   padding-top: .01rem; }
+  @media only screen and (max-width: 768px) {
+    .instructor {
+      padding-left: 0; } }
 
 .instructor-heading,
 .instructor-name,
@@ -209,6 +252,12 @@ body {
 .instructor-description {
   position: relative;
   top: 13rem; }
+  @media only screen and (max-width: 768px) {
+    .instructor-heading,
+    .instructor-name,
+    .instructor-company,
+    .instructor-description {
+      text-align: center; } }
 
 .instructor-heading {
   font-size: 1.125rem;
@@ -234,6 +283,9 @@ body {
 .testimonial {
   height: 39.125rem;
   text-align: center; }
+  @media only screen and (max-width: 768px) {
+    .testimonial {
+      height: 42rem; } }
 
 .testimonial-quote {
   display: inline-block;
@@ -243,6 +295,10 @@ body {
   margin-top: 10.625rem;
   margin-bottom: 0;
   font-size: 3rem; }
+  @media only screen and (max-width: 768px) {
+    .testimonial-quote {
+      font-size: 2rem;
+      max-width: 90%; } }
 
 .testimonial-person {
   margin-top: 4.4375rem;
@@ -258,16 +314,21 @@ body {
   margin-bottom: 6.9375; }
 
 .footer-background {
-  /* 	height: 42rem; */
   background: url("../../img/footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: #FFFFFF; }
+  @media only screen and (max-width: 768px) {
+    .footer-background {
+      background-attachment: none; } }
 
 .main-footer {
   height: 34.125rem;
   display: block; }
+  @media only screen and (max-width: 768px) {
+    .main-footer {
+      height: 25rem; } }
 
 .course-info {
   display: inline-block;
@@ -278,6 +339,11 @@ body {
   padding-left: 5.75rem;
   font-size: 2.25rem;
   font-weight: 300; }
+  @media only screen and (max-width: 768px) {
+    .course-info {
+      font-size: 1.5rem;
+      display: block;
+      margin-bottom: 4rem; } }
 
 .course-info li:nth-child(5) {
   padding: 2.6875rem 0; }
@@ -293,6 +359,14 @@ body {
   display: inline-block;
   padding: 1.5rem 7.5rem;
   font-weight: 700; }
+  @media only screen and (max-width: 768px) {
+    .sign-up-button {
+      float: none;
+      font-size: 1rem;
+      padding: 1rem 0;
+      display: block;
+      margin: 0 auto 4rem;
+      width: 50%; } }
 
 .sub-footer {
   height: 7.875rem;
@@ -350,8 +424,7 @@ body {
   .colearners-item {
     margin-right: 0; }
   .instructor {
-    padding-left: 0;
-    background-size: cover; }
+    padding-left: 0; }
   .instructor-heading,
   .instructor-name,
   .instructor-company,

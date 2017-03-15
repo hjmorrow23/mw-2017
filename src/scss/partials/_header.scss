@@ -1,0 +1,109 @@
+.background-wrapper{
+	background-image: url("../../img/hero.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: $white;
+	height: 40rem;
+	
+	@include max-down(768px) {
+		height: 45rem;
+		background-attachment: none;
+	}
+}
+
+.logo,
+.main-nav,
+.nav-item
+ {
+	display: inline-block;
+}
+
+.logo,
+.main-nav {
+	
+	@include max-down(768px) { 
+		display: block;
+	}
+	
+}
+
+.logo {
+	width: 9.8125rem;
+	height: 6.25rem;
+	margin-top: 1.125rem;
+	margin-left: 2.125rem;
+	
+	@include max-down(768px) {
+		margin: 0 auto;
+		padding-top: 2rem;
+		text-align: center;
+	}
+}
+
+.main-nav {
+	margin-top: 2.1875rem;
+	margin-right: 2.1875rem;
+	float: right;
+	
+	@include max-down(768px) {
+		padding: 2rem 0 0 0;
+		margin: 0;
+		float: none;
+		text-align: center;
+	}
+}
+
+.nav-list {
+	@include max-down(768px) {
+		padding: 0;
+	}
+}
+
+.nav-item {
+	list-style: none;
+	padding-left: 1.75rem;
+	
+	@include max-down(768px) {
+		padding: 0 .5rem;
+	}
+}
+
+.nav-item-link {
+	text-decoration: none;
+	color: $white;
+	font-size: 1.125rem;
+	font-weight: $medium;
+}
+
+.main-hero {
+	@extend %centered;
+	height: 20rem;
+}
+
+.main-hero-heading,
+.main-hero-date {
+	margin: 0;
+	position: relative;
+	top: 45%;
+	
+	@include max-down(768px) {
+		top: 30%;
+	}
+}
+
+.main-hero-heading {
+	font-size: 5.75rem;
+	font-weight: $thin;
+}
+
+.main-hero-date {
+	font-size: 1.5rem;
+	font-weight: $light;
+	
+}
+
+.main-hero-date::after {
+	content:"</>";
+	display: block;
+}

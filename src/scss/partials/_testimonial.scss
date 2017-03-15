@@ -1,0 +1,38 @@
+.testimonial {
+	height: 39.125rem;
+	text-align: center;
+	
+	@include max-down(768px) { 
+		height: 42rem;
+	}
+}
+
+.testimonial-quote {
+	display: inline-block;
+	font-weight: $light;
+	max-width: 56.4375rem;
+	color: $redish;
+	margin-top: 10.625rem;
+	margin-bottom: 0;
+	font-size: 3rem;
+	
+	@include max-down(768px) { 
+		font-size: 2rem;
+		max-width: 90%;
+	}
+}
+
+.testimonial-person {
+	margin-top: 4.4375rem;
+	color: $lightestgrey;
+	font-size: 1.375rem;
+	font-weight: $medium;
+}
+
+.testimonial-info, 
+.testimonial-course {
+	font-size: 1rem;
+	font-weight: $medium;
+	color: $lightestgrey;
+	margin-bottom: 6.9375;
+}

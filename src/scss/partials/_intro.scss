@@ -1,0 +1,27 @@
+.intro {
+	@extend %centered;
+}
+
+.intro-text {
+	color: $grey;
+	margin-top: 9.375rem;
+	margin-bottom: 4.8125rem;
+	font-size: 2rem;
+	@extend %centered;
+	max-width: 52.75rem;
+	display: inline-block;
+	font-weight: $light;
+	
+	@include max-down(768px) {
+		max-width: 90%;
+	}
+}
+
+.divider {
+	width:100%;
+	height: 3rem;
+	background-image: url("../../img/divider.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-bottom: 7.9375rem;
+}
