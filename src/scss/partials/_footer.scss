@@ -6,7 +6,7 @@
 	color: $white;
 	
 	@include max-down(768px) {
-		background-attachment: none;
+		background-attachment: scroll;
 	}
 }
 

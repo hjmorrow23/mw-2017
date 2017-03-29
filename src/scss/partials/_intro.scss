@@ -18,10 +18,15 @@
 }
 
 .divider {
-	width:100%;
+	max-width:90%;
+	margin: 0 auto 7.9375rem auto; 
 	height: 3rem;
 	background-image: url("../../img/divider.png");
 	background-repeat: no-repeat;
 	background-position: center center;
-	margin-bottom: 7.9375rem;
+	
+	@include max-down(768px) {
+		margin-bottom: 5rem;
+	}
 }
+

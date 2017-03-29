@@ -1,3 +1,4 @@
+@import "partials/normalize";
 @import "partials/variables";
 @import "partials/helpers";
 @import "partials/globals";
@@ -10,6 +11,7 @@
 @import "partials/footer";
 
 
+/*
 @media (max-width: 768px) {
 	.logo,
 	.main-nav {
@@ -116,3 +118,4 @@
 		width: 50%;
 	}
 }
+*/

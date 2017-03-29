@@ -35,3 +35,10 @@
 @mixin min-max($min, $max) {
 	@media only screen and (min-width: $min) and (max-width: $max) { @content; }
 }
+
+@mixin hide-text {
+	display: block; 	// always needed
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
+}
