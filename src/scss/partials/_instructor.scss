@@ -10,6 +10,19 @@
 	@include max-down(768px) {
 		padding-left: 0;
 	}
+	
+	@include min-max(950px, 1020px) {
+		background-size: contain;
+	}
+	
+	@include min-max(768px, 950px) {
+		background-position-x: 50%;
+	}
+	
+	@include min-max(705px, 768px) {
+		background-image: none;
+		background-color: black;
+	}
 }
 
 .instructor-heading,
@@ -47,4 +60,9 @@
 	font-size: 1.25rem;
 	font-weight: $regular;
 	max-width: 26.5rem;
+	
+	@include max-down(768px) {
+		margin: 0 auto;
+		max-width: 85%;
+	}
 }

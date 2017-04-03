@@ -454,10 +454,15 @@ body {
   @media only screen and (max-width: 768px) {
     .logo {
       margin: 0 auto;
-      padding-top: 2rem;
+      margin-top: .75rem;
+      margin-left: 1.25rem;
       text-align: center;
-      width: 3rem;
-      height: 2rem; } }
+      width: 4.5rem;
+      height: 3rem; } }
+  @media only screen and (max-width: 768px) {
+    .logo img {
+      width: 100%;
+      height: 100%; } }
 
 .main-nav {
   margin-top: 2.1875rem;
@@ -579,11 +584,20 @@ body {
 .main-hero-date {
   margin: 0;
   position: relative;
-  top: 45%; }
+  top: 47%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
   @media only screen and (max-width: 768px) {
     .main-hero-heading,
     .main-hero-date {
-      top: 30%; } }
+      position: relative;
+      top: 60%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); } }
 
 .main-hero-heading {
   font-size: 5.75rem;
@@ -608,6 +622,9 @@ body {
   @media only screen and (max-width: 768px) {
     .intro-text {
       max-width: 90%; } }
+  @media only screen and (min-width: 769px) and (max-width: 830px) {
+    .intro-text {
+      max-width: 85%; } }
 
 .divider {
   max-width: 90%;
@@ -701,7 +718,7 @@ body {
 .colearners-item {
   display: inline-block;
   margin-right: 2.625rem; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 663px) {
     .colearners-item {
       margin-right: 0; } }
 
@@ -709,6 +726,27 @@ body {
 .colearners-item:nth-child(8),
 .colearners-item:nth-child(12) {
   margin-right: 0; }
+  @media only screen and (min-width: 622px) and (max-width: 1215px) {
+    .colearners-item:nth-child(4),
+    .colearners-item:nth-child(8),
+    .colearners-item:nth-child(12) {
+      margin-right: 2.625rem; } }
+
+@media only screen and (min-width: 977px) and (max-width: 1207px) {
+  .colearners-item:nth-child(3),
+  .colearners-item:nth-child(6),
+  .colearners-item:nth-child(9),
+  .colearners-item:nth-child(12) {
+    margin-right: 0; } }
+
+@media only screen and (min-width: 622px) and (max-width: 977px) {
+  .colearners-item:nth-child(2),
+  .colearners-item:nth-child(4),
+  .colearners-item:nth-child(6),
+  .colearners-item:nth-child(8),
+  .colearners-item:nth-child(10),
+  .colearners-item:nth-child(12) {
+    margin-right: 0; } }
 
 .colearners-photo {
   border-radius: 50%; }
@@ -752,6 +790,16 @@ body {
   @media only screen and (max-width: 768px) {
     .instructor {
       padding-left: 0; } }
+  @media only screen and (min-width: 950px) and (max-width: 1020px) {
+    .instructor {
+      background-size: contain; } }
+  @media only screen and (min-width: 768px) and (max-width: 950px) {
+    .instructor {
+      background-position-x: 50%; } }
+  @media only screen and (min-width: 705px) and (max-width: 768px) {
+    .instructor {
+      background-image: none;
+      background-color: black; } }
 
 .instructor-heading,
 .instructor-name,
@@ -786,6 +834,10 @@ body {
   font-size: 1.25rem;
   font-weight: 400;
   max-width: 26.5rem; }
+  @media only screen and (max-width: 768px) {
+    .instructor-description {
+      margin: 0 auto;
+      max-width: 85%; } }
 
 .testimonial {
   height: 39.125rem;
@@ -806,6 +858,9 @@ body {
     .testimonial-quote {
       font-size: 2rem;
       max-width: 90%; } }
+  @media only screen and (min-width: 769px) and (max-width: 900px) {
+    .testimonial-quote {
+      max-width: 85%; } }
 
 .testimonial-person {
   margin-top: 4.4375rem;
@@ -846,10 +901,12 @@ body {
   padding-left: 5.75rem;
   font-size: 2.25rem;
   font-weight: 300; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     .course-info {
       font-size: 1.5rem;
       display: block;
+      text-align: center;
+      padding-left: 0;
       margin-bottom: 4rem; } }
 
 .course-info li:nth-child(5) {
@@ -865,8 +922,12 @@ body {
   float: right;
   display: inline-block;
   padding: 1.5rem 7.5rem;
-  font-weight: 700; }
-  @media only screen and (max-width: 768px) {
+  font-weight: 700;
+  /*
+	@include min-max(769px, 1000px) {
+	}
+*/ }
+  @media only screen and (max-width: 1000px) {
     .sign-up-button {
       float: none;
       font-size: 1rem;
@@ -882,6 +943,9 @@ body {
   background: rgba(0, 0, 0, 0.2);
   position: relative;
   bottom: 0; }
+  @media only screen and (max-width: 1000px) {
+    .sub-footer {
+      text-align: center; } }
 
 .footer-logo,
 .address {

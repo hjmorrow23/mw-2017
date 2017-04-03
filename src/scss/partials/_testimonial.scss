@@ -20,6 +20,10 @@
 		font-size: 2rem;
 		max-width: 90%;
 	}
+	
+	@include min-max(769px, 900px) {
+		max-width: 85%;
+	}
 }
 
 .testimonial-person {

@@ -23,15 +23,42 @@
 	display: inline-block;
 	margin-right: 2.625rem;
 	
-	@include max-down(768px) { 
+	@include max-down(663px) { 
 		margin-right: 0;
 	}
+	
 }
 
 .colearners-item:nth-child(4),
 .colearners-item:nth-child(8),
 .colearners-item:nth-child(12) {
 	margin-right: 0;
+	
+	@include min-max(622px, 1215px) {
+		margin-right: 2.625rem;
+	}
+}
+
+.colearners-item:nth-child(3),
+.colearners-item:nth-child(6),
+.colearners-item:nth-child(9),
+.colearners-item:nth-child(12) {
+	
+	@include min-max(977px, 1207px) {
+		margin-right: 0;
+	}
+	
+}
+
+.colearners-item:nth-child(2),
+.colearners-item:nth-child(4),
+.colearners-item:nth-child(6),
+.colearners-item:nth-child(8),
+.colearners-item:nth-child(10),
+.colearners-item:nth-child(12) {
+	@include min-max(622px, 977px) {
+		margin-right: 0;
+	}
 }
 
 .colearners-photo {
