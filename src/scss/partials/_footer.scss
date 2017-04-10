@@ -1,9 +1,11 @@
+/* Footer */
+
 .footer-background {
+	color: $white;
 	background: url("../../img/footer.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	color: $white;
 	
 	@include max-down(768px) {
 		background-attachment: scroll;
@@ -11,8 +13,8 @@
 }
 
 .main-footer {
-	height: 34.125rem;
 	display: block;
+	height: 34.125rem;
 	
 	@include max-down(768px) {
 		height: 25rem;
@@ -21,20 +23,20 @@
 
 .course-info {
 	display: inline-block;
-	list-style: none;
 	margin-top: 0;
 	margin-bottom: 4.55rem;
 	padding-top: 8.8125rem;
 	padding-left: 5.75rem;
 	font-size: 2.25rem;
 	font-weight: $light;
+	list-style: none;
 	
 	@include max-down(1000px) { 
-		font-size: 1.5rem;
-		display: block;
 		text-align: center;
+		display: block;
 		padding-left: 0;
 		margin-bottom: 4rem;
+		font-size: 1.5rem;
 	}
 }
 
@@ -43,40 +45,35 @@
 }
 
 .sign-up-button {
+	@extend %centered;
+	float: right;
+	display: inline-block;
 	margin-top: 12.8125rem;
-	border: 3px solid $white;
 	margin-right: 7.75rem;
+	padding: 1.5rem 7.5rem;
 	font-size: 1.86875rem;
 	text-decoration: none;
 	color: $white;
-	float: right;
-	display: inline-block;
-	padding: 1.5rem 7.5rem;
-	@extend %centered;
 	font-weight: $bold;
+	border: 3px solid $white;
 	
 	@include max-down(1000px) { 
 		float: none;
-		font-size: 1rem;
-		padding: 1rem 0;
 		display: block;
+		padding: 1rem 0;
 		margin: 0 auto 4rem;
 		width: 50%;
+		font-size: 1rem;
 	}
-	
-/*
-	@include min-max(769px, 1000px) {
-	}
-*/
 }
 
 .sub-footer {
-	height: 7.875rem;
-	width: 100%;
-	display: inline-block;
-	background: rgba(0, 0, 0, .2);
 	position: relative;
 	bottom: 0;
+	display: inline-block;
+	height: 7.875rem;
+	width: 100%;
+	background: rgba(0, 0, 0, .2);
 	
 	@include max-down(1000px) {
 		text-align: center;
@@ -85,9 +82,9 @@
 
 .footer-logo,
 .address {
-	display: inline-block;
 	position: relative;
 	top: 2rem;
+	display: inline-block;
 	margin-left: 2rem;
 }
 

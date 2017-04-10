@@ -1,6 +1,8 @@
+/* Testimonial Section */
+
 .testimonial {
+	@extend %centered;
 	height: 39.125rem;
-	text-align: center;
 	
 	@include max-down(768px) { 
 		height: 42rem;
@@ -9,16 +11,16 @@
 
 .testimonial-quote {
 	display: inline-block;
-	font-weight: $light;
 	max-width: 56.4375rem;
-	color: $redish;
 	margin-top: 10.625rem;
 	margin-bottom: 0;
 	font-size: 3rem;
+	font-weight: $light;
+	color: $redish;
 	
 	@include max-down(768px) { 
-		font-size: 2rem;
 		max-width: 90%;
+		font-size: 2rem;
 	}
 	
 	@include min-max(769px, 900px) {
@@ -28,15 +30,15 @@
 
 .testimonial-person {
 	margin-top: 4.4375rem;
-	color: $lightestgrey;
 	font-size: 1.375rem;
 	font-weight: $medium;
+	color: $lightestgrey;
 }
 
 .testimonial-info, 
 .testimonial-course {
+	margin-bottom: 6.9375;
 	font-size: 1rem;
 	font-weight: $medium;
 	color: $lightestgrey;
-	margin-bottom: 6.9375;
 }
