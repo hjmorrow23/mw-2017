@@ -1,3 +1,5 @@
+// Responsive Nav Button Toggle
+
 var menuBtn = document.querySelector('.js-menu-btn');
 var body   = document.querySelector('body');
 

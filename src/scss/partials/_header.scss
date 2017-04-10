@@ -1,3 +1,8 @@
+/* Header Styles
+========================
+*/
+
+//Backgruond image 
 .background-wrapper{
 	background-image: url("../../img/hero.jpg");
 	background-repeat: no-repeat;
@@ -12,23 +17,13 @@
 	}
 }
 
+
 .logo,
 .main-nav,
 .nav-item
  {
 	display: inline-block;
 }
-
-/*
-.logo,
-.main-nav {
-	
-	@include max-down(768px) { 
-		display: block;
-	}
-	
-}
-*/
 
 .logo {
 	width: 9.8125rem;
@@ -55,6 +50,7 @@
 	}
 }
 
+//Navigation
 .main-nav {
 	margin-top: 2.1875rem;
 	margin-right: 2.1875rem;
@@ -124,6 +120,7 @@
 	
 }
 
+//Responsive Nav Button
 .menu-btn {
 	
 	display: none;

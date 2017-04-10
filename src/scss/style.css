@@ -412,6 +412,7 @@ template {
 /* Mixins 
 ========================
 */
+/* Global Styles */
 *, *::before, *::after {
   box-sizing: border-box; }
 
@@ -419,6 +420,9 @@ body {
   margin: 0 auto;
   font-family: 'Roboto', sans-serif; }
 
+/* Header Styles
+========================
+*/
 .background-wrapper {
   background-image: url("../../img/hero.jpg");
   background-repeat: no-repeat;
@@ -436,16 +440,6 @@ body {
 .nav-item {
   display: inline-block; }
 
-/*
-.logo,
-.main-nav {
-	
-	@include max-down(768px) { 
-		display: block;
-	}
-	
-}
-*/
 .logo {
   width: 9.8125rem;
   height: 6.25rem;
