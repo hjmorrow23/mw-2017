@@ -1,1 +1,1 @@
-var menuBtn=document.querySelector(".js-menu-btn"),body=document.querySelector("body");menuBtn.addEventListener("click",function(){body.classList.toggle("nav-shown")});
+var menuBtn=document.querySelector(".js-menu-btn"),body=document.querySelector("body"),nav=document.getElementsByClassName("nav-item-link");menuBtn.addEventListener("click",function(){body.classList.toggle("nav-shown")});

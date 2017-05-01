@@ -11,17 +11,17 @@
 	
 	<!-- Body Styles -->
 	<body>
-		<div class="background-wrapper">
+		<div class="background-wrapper slide">
 			
 			<!-- Header	 -->
 			<header class="main-header">
 				<a href="#" class="logo"><img src="img/factory-logo.png" alt="The Factory Logo"/></a> 
 				<nav class="main-nav">
 					<ul class="nav-list">
-						<li class="nav-item"><a href="#" class="nav-item-link">Description</a></li>
-						<li class="nav-item"><a href="#" class="nav-item-link">coLearners</a></li> 
-						<li class="nav-item"><a href="#" class="nav-item-link">Instructor</a></li>
-						<li class="nav-item"><a href="#" class="nav-item-link">Sign up</a></li>
+						<li class="nav-item"><a href="#description" class="nav-item-link">Description</a></li>
+						<li class="nav-item"><a href="#colearners" class="nav-item-link">coLearners</a></li> 
+						<li class="nav-item"><a href="#instructor" class="nav-item-link">Instructor</a></li>
+						<li class="nav-item"><a href="#footer" class="nav-item-link">Sign up</a></li>
 					</ul>
 				</nav> 
 				<button class="menu-btn js-menu-btn"><span>Menu</span></button>		            
@@ -33,7 +33,7 @@
 		</div>
 		
 		<!-- 	Intro Section	 -->
-		<section class="intro">
+		<section class="intro" id="description">
 			<p class="intro-text">HTML and CSS are only part of the picture. The modern front-end developer will also need to be versed in version control, task automators, preprocessors, frameworks, the command line and more.</p>
 			<div class="divider"></div>
 		</section>
@@ -69,7 +69,7 @@
 		</section>
 		
 		<!-- 	coLearners Section	 -->
-		<section class="colearners">
+		<section class="colearners" id="colearners">
 			<h1 class="colearners-heading">Meet the coLearners</h1>
 			<ul class="colearners-list">
 				<li class="colearners-item">
@@ -196,7 +196,7 @@
 		</section>
 		
 		<!-- 	Instructor Section	 -->
-		<section class="instructor">
+		<section class="instructor" id="instructor">
 			<h1 class="instructor-heading">Meet the Instructor</h1>
 			<h2 class="instructor-name">Jeremy Abrahams</h2>
 			<h3 class="instructor-company">Mighty in the Midwest</h3>
@@ -213,7 +213,7 @@
 		
 		<!-- 	Footer	 -->
 		<div class="footer-background">
-			<section "main-footer">
+			<section "main-footer" id="footer">
 				<ul class="course-info">
 					<li class="course-detail">January 17th-April 4th</li>
 					<li class="course-detail">Every Tue. 6pm - 8:30pm</li>
@@ -233,6 +233,7 @@
 			</footer>
 		</div>
 		<script type="text/javascript" src="assets/js/lib/modernizr.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" src="src/js/app.js"></script>
 	</body>
 </html>
