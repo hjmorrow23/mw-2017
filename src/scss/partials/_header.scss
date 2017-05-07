@@ -7,11 +7,10 @@
 	background-image: url("../../img/hero.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-// 	background-attachment: fixed;
+ 	background-attachment: fixed;
 	
 	@include max-down(768px) {
 		height: 45rem;
-		//input smaller image
 		background-attachment: scroll;
 	}
 }
